@@ -534,6 +534,8 @@ margin: 15px;
 
 /*----------------------------------------CONTACT PAGE----------------------------------*/
 
+
+
 .containerrr {
   position: relative;
   width: 95%;
@@ -840,12 +842,14 @@ textarea.input {
 }
 .last-text{
   text-align: center;
+  margin-top: 40px;
 }
 
 .last-text p{
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 1px;
+
 }
 
 
@@ -853,7 +857,7 @@ textarea.input {
 /**FOOTER**********/
 footer {
   background-color: #1e690f;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -875,6 +879,7 @@ h3 {
   font-size: 28px;
   margin-bottom: 15px;
   text-align: center;
+
 }
 
 .footer-content p {
@@ -882,6 +887,7 @@ h3 {
   margin: auto;
   padding: 7px;
   color: white;
+  font-size: 20px;
 }
 
 .footer-content ul {
@@ -903,6 +909,9 @@ h3 {
   list-style-type: none;
   padding: 7px;
   position: relative;
+}
+.list li a{
+  color: white;
 }
 
 .list li::before {
@@ -949,6 +958,7 @@ a:hover {
   color: brown;
   transform: scale(1.1) translateY(-5px);
 }
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
