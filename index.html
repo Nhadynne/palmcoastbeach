@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
     <link rel="icon" type="image/x-icon" href="images/fav.png">
@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
     <title>Palm Coast Beach Resort</title>
 </head>
 <body>
@@ -53,135 +54,191 @@
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+  
+    <!----------------------------------ABOUT SECTION---------------------------------->
     <section id="about">
         <div class="container">
-            <img src="images/main.jpg" alt="Beach Scene" class="main-image">
-           
+            <img src="images/main (1).jpg" alt="Beach Scene" class="main-image">
             <div class="short-description">
-                <h2>About Us</h2>
+                <h2>WHISPERING PALMS</h2>
                 <p>As a well-known local travel destination in Ivisan, Palm Coast Beach Resort offers various amenities such as daytime cottages, restaurant, coffee, and water sports activities such as kayaking and paddle boarding. As the very first accredited tourism enterprise to resume operations during pandemic, these new attractions helped us boost our popularity all over in Capiz and it's nearby provinces.</p>
             </div>
         </div>
+        <div class="bottom-images">
+            <img src="images/gallery15.jpg" alt="Tent Camping" class="bottom-image">
+            <img src="images/gallery16.jpg" alt="Sunset" class="bottom-image">
+            <img src="images/gallery17.jpg" alt="Cottages" class="bottom-image">
+        </div>
     </section>
 
 
-    <!-- GALLERY SECTION -->
+    <section class="adventure-section">
+     
+        
+      
+      
+      <div class="adventure-text">
+        <div class="adventure-header">
+          <div class="subtitle" style="color: black; font-size: 30px;">GET TO KNOW MORE </div>
+          <hr>
+        <div class="adventure-buttons">
+          <button class="adventure-btn" onclick="showText('Mission')">Mission</button>
+          <button class="adventure-btn" onclick="showText('History')">History</button>
+          <button class="adventure-btn" onclick="showText('Vision')">Vision</button>
+        </div>
+        <div id="Mission" class="text-set hidden">
+          <p>"To provide an unforgettable sanctuary where guests can reconnect with nature, embrace adventure, and create lasting memories. Rooted in family values and inspired by the beauty of our coastal environment, we are committed to offering exceptional hospitality, sustainable practices, and a tranquil escape for all who visit."</p>
+        </div>
+        <div id="History" class="text-set">
+          <p>"We started this resort during the challenging times of the pandemic in 2019, driven by a shared dream of creating a sanctuary where nature meets tranquility. Nestled in a picturesque coastal area, the resort was named Palm Coast because of the abundance of coconut trees that gently sway with the ocean breeze, forming a serene and refreshing canopy over the property. Each corner of the resort reflects the warmth and effort of our family, who came together to transform this lush paradise into a peaceful getaway for travelers seeking relaxation and adventure. Whether you're here to marvel at the beauty of nature, embark on exciting activities, or simply unwind under the tropical skies, Palm Coast Beach Resort offers a haven of comfort and unforgettable memories."</p>
+        </div>
+       
+        <div id="Vision" class="text-set hidden">
+          <p>"To be a premier seaside resort renowned for our harmonious blend of natural beauty, outstanding service, and dedication to preserving the environment. We envision creating a global destination where guests feel rejuvenated, inspired, and connected to the wonders of the tropics."</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+    <!---------------------------------GALLERY SECTION------------------------------ -->
     <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <div class="gallery-images">
-                <div class="panel" style="background-image: url('images/gallery1.jpg');"></div>
-                <div class="panel" style="background-image: url('images/gallery2.jpg');"></div>
-                <div class="panel" style="background-image: url('images/gallery3.jpg');"></div>
-                <div class="panel" style="background-image: url('images/pic4.jpg');"></div>
-                <div class="panel" style="background-image: url('images/pic5.jpg');"></div>
-                <div class="panel" style="background-image: url('images/pic1.jpg');"></div>
-                <div class="panel" style="background-image: url('images/tent1.jpg');"></div>
-                <div class="panel" style="background-image: url('images/gallery8.jpg');"></div>
-                <div class="panel" style="background-image: url('images/pic2.jpg');"></div>
-                <div class="panel" style="background-image: url('images/gallery10.jpg');"></div>
-            </div>
+      <div class="section-descriptionn">
+        <h2 >Captured Moments</h2>
+        <hr>
+        <p style="text-align: left; font-size: 20px;">
+        Experience the breathtaking beauty of Palm Coast Beach Resort through a collection of stunning photos.
+        From breathtaking sunsets to luxurious rooms and serene surroundings, our gallery captures the essence of relaxation and elegance. Discover the experiences that await you!
+        </p>
+      </div>
+    
+        <div class="gallery">
+          <div class="gallery-item large">
+            <img src="images/gallery1 (1).jpg" alt="Image 1">
+          </div>
+          <div class="gallery-item medium">
+            <img src="images/gallery2 (1).jpg" alt="Image 2">
+          </div>
+          <div class="gallery-item medium">
+            <img src="images/gallery3 (1).jpg" alt="Image 3">
+          </div>
+          <div class="gallery-item large">
+            <img src="images/gallery5 (1).jpg" alt="Image 4">
+          </div>
+          <div class="gallery-item large">
+            <img src="images/gallery6 (1).jpg" alt="Image 5">
+          </div>
+          <div class="gallery-item medium">
+            <img src="images/gallery7 (1).jpg" alt="Image 6">
+          </div>
         </div>
-        <div class="dots-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
+      </div>
     </section>
+    
    
-
 
     <!--ACCOMMODATION SECTION-->
     <section id="accommodation">
-        <h2>Our Accommodations</h2>
-        <div class="accommodation-container">
-            <div class="accommodation-item">
-                <img src="images/room1.jpg" alt="Standard Room">
-                <div class="accommodation-details">
-                    <h3>AC Room</h3>
-                    <p>Comfortable and cozy rooms equipped with all essential amenities.</p>
-                    <button class="primary-btn">Book Now</button>
-                </div>
-            </div>
-            <div class="accommodation-item">
-                <img src="images/cottage2.jpg" alt="Deluxe Room">
-                <div class="accommodation-details">
-                    <h3>Kubo A</h3>
-                    <p> Experience Palm Coast Beach Resort starting from 1,300 per night, affordable and relaxing stay.</p>
-                    <button class="primary-btn">Book Now</button>
-                </div>
-            </div>
-            <div class="accommodation-item">
-                <img src="images/cottage1.jpg" alt="Suite">
-                <div class="accommodation-details">
-                    <h3>Kubo B</h3>
-                    <p>Offering our new Kubo to cater your staycation needs! Whether you're couple of in a group, we got you.</p>
-                    <button class="primary-btn">Book Now</button>
-                </div>
-            </div>
-            <div class="accommodation-item">
-                <img src="images/tent.jpg" alt="Suite">
-                <div class="accommodation-details">
-                    <h3>Tent</h3>
-                    <p>Nights are for beach bonfires and good vibes. Life is best when you're camping.</p>
-                    <button class="primary-btn">Book Now</button>
-                </div>
-            </div>
-           
-        </div>
-    </section>
-    
+      <div class="section-descriptionn">
+          <h2>Experience Our Spaces</h2>
+        <hr> 
+          <p style="text-align: left; font-size: 20px;">
+            Discover the perfect place to relax and unwind at Palm Coast Beach Resort.
+          </p>
+      </div>
 
-    <!--DINING SECTION-->
-    <section id="dining">
-        <h2>Dining Options</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                                        
-                <div class="timeline-description">
-                    <h3>Restaurant</h3>
-                    <p>We offer various food selections from seafoods to your favorite grilled dishes. Very affordable with set meals with drinks to a sharing dish good for 4 persons.</p>
-                </div>
-                <div class="timeline-image">
-                    <img src="images/barkada.jpg" alt="Fine Dining">
-                </div>  
-                <div class="timeline-image">
-                    <img src="images/barkada1.jpg" alt="Fine Dining">
-                </div>   
-                <div class="timeline-image">
-                    <img src="images/seafood.jpg" alt="Fine Dining">
-                </div>   
-                <div class="timeline-image">
-                    <img src="images/seafood1.jpg" alt="Fine Dining">
-                </div>   
-            </div>
+      <div class="accommodation-container">
+          <div class="accommodation-item">
+              <img src="images/room1 (1).jpg" alt="Standard Room">
+              <div class="accommodation-details">
+                  <h3>AC Room</h3>
+                  <p>Comfortable and cozy rooms equipped with all essential amenities.</p>
+                  <button class="primary-btn">Book Now</button>
+              </div>
+          </div>
+          <div class="accommodation-item">
+              <img src="images/cottage2 (1).jpg" alt="Deluxe Room">
+              <div class="accommodation-details">
+                  <h3>Kubo A</h3>
+                  <p> Experience Palm Coast Beach Resort starting from 1,300 per night, affordable and relaxing stay.</p>
+                  <button class="primary-btn">Book Now</button>
+              </div>
+          </div>
+          <div class="accommodation-item">
+              <img src="images/cottage1 (1).jpg" alt="Suite">
+              <div class="accommodation-details">
+                  <h3>Kubo B</h3>
+                  <p>Offering our new Kubo to cater your staycation needs! Whether you're couple of in a group, we got you.</p>
+                  <button class="primary-btn">Book Now</button>
+              </div>
+          </div>
+          <div class="accommodation-item">
+              <img src="images/tent (1).jpg" alt="Suite">
+              <div class="accommodation-details">
+                  <h3>Tent</h3>
+                  <p>Nights are for beach bonfires and good vibes. Life is best when you're camping.</p>
+                  <button class="primary-btn">Book Now</button>
+              </div>
+          </div>
+         
+      </div>
+  </section>
+
+
+  <!--DINING SECTION-->
+  <section id="dining">
+    <h2>Dining Options</h2>
+    <hr>
+    <div class="timeline">
+        <div class="timeline-description">
+            <h3>Restaurant</h3>
+            <p>We offer various food selections from seafoods to your favorite grilled dishes. Very affordable with set meals with drinks to a sharing dish good for 4 persons.</p>
+        </div>
+        <div class="timeline-item" style="margin-top: -3%;">
+                                    
             
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-description">
-                    <h3>Palm Coast Coffee</h3>
-                    <p>Is the flagship cafe of the resort known as the best coffee in town since it's opening last 2021. We offer coffee from Batangas and Sagada, which is very popular with coffee lovers.</p>
-                </div>
-                <div class="timeline-image">
-                    <img src="images/mango.jpg" alt="Fine Dining">
-                </div>  
-                <div class="timeline-image">
-                    <img src="images/matcha.jpg" alt="Fine Dining">
-                </div>   
-                <div class="timeline-image">
-                    <img src="images/coffee.jpg" alt="Fine Dining">
-                </div>   
-                <div class="timeline-image">
-                    <img src="images/soda.jpg" alt="Fine Dining">
-                </div>   
-            </div>
-            </div>
+            <div class="timeline-image">
+                <img src="images/barkada (1).jpg" alt="Fine Dining">
+            </div>  
+            <div class="timeline-image">
+                <img src="images/barkada1 (1).jpg" alt="Fine Dining">
+            </div>  
+            <div class="timeline-image">
+                <img src="images/seafood (1).jpg" alt="Fine Dining">
+            </div>   
+            <div class="timeline-image">
+                <img src="images/seafood1 (1).jpg" alt="Fine Dining">
+            </div>   
         </div>
-    </section>
+        
+        </div>
+        <div class="timeline-description">
+            <h3>Palm Coast Coffee</h3>
+            <p>Is the flagship cafe of the resort known as the best coffee in town since it's opening last 2021. We offer coffee from Batangas and Sagada, which is very popular with coffee lovers here and abroad. Serving from black coffee to different drinks that will surely excite anyone who tries it.</p>
+        </div>
+        <div class="timeline-item">
+            
+            <div class="timeline-image">
+                <img src="images/mango (1).jpg" alt="Fine Dining">
+            </div>  
+            <div class="timeline-image">
+                <img src="images/matcha (1).jpg" alt="Fine Dining">
+            </div>   
+            <div class="timeline-image">
+                <img src="images/coffee (1).jpg" alt="Fine Dining">
+            </div>   
+            <div class="timeline-image">
+                <img src="images/soda (1).jpg" alt="Fine Dining">
+            </div>   
+        </div>
+        </div>
+    </div>
+</section>
 
 
-   <!--CONTACT US SECTION-->
+
+   <!-------------------------------------------CONTACT US SECTION---------------------------------------------------->
     <section id="contact">
     <div class="containerrr">
         <span class="big-circle"></span>
@@ -253,16 +310,124 @@
       </div>
       </section>
 
-      <div class="last-text">
-        <p>
-            Website Designer & Developer, Palm Coast Beach Resort</p>
-    </div>
+      <footer>
+        <div class="containerr">
+          <div class="footer-content"style="margin-right: 20%;">
+            <h3>Contact Us</h3>
+            <p>Email: palmcoastbeach<br>resort@gmail.com</p>
+            <p>Phone: 09959908318</p>
+            <p>Address: Brgy. Basiao, Ivisan, Capiz, 5805</Address></p>
+          </div>
+
+          <div class="footer-content" style="margin-right: 20%;">
+            <h3>Links</h3>
+           <ul class="list">
+            <li><a href=""></a>HOME</li>
+            <li><a href=""></a>ABOUT</li>
+            <li><a href=""></a>GALLERY</li>
+            <li><a href=""></a>ACCOMMODATIONS</li>
+            <li><a href=""></a>DINING</li>
+            <li><a href=""></a>CONTACT US</li>
+           </ul>
+          </div>
+
+          <div class="footer-content" style="margin-right: 10%;">
+            <h3>Follow Us</h3>
+            <div class="iconss">
+              <a href="https://www.facebook.com/palmcoastbeachresort" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+              <a href="https://www.instagram.com/palmcoast_beachresort/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+         </div>
+        
+        </div>
+      </footer>
     
+    <script>
+      const panels = document.querySelectorAll(".panel");
+
+panels.forEach((panel) => {
+    panel.addEventListener("click", () => {
+        removeActiveClasses();
+        panel.classList.add("active");
+    });
+});
+
+function removeActiveClasses() {
+    panels.forEach((panel) => {
+        panel.classList.remove("active");
+    })
+}
+
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
 
 
-        <!----custom js link---->
-    <script src="script.js"></script>
+function handleBooking(event) {
+    event.preventDefault(); // Prevent form from submitting the traditional way
 
+    // Get form values
+    const checkinDate = document.getElementById("checkin").value;
+    const checkoutDate = document.getElementById("checkout").value;
+    const guests = document.getElementById("guests").value;
+    const roomType = document.getElementById("roomType").value;
+
+    // Simple validation
+    if (new Date(checkinDate) >= new Date(checkoutDate)) {
+        alert("Check-out date must be after the check-in date.");
+        return;
+    }
+
+    // Display confirmation message
+    const confirmationMessage = document.getElementById("confirmationMessage");
+    confirmationMessage.innerHTML = `
+        <h3>Booking Confirmation</h3>
+        <p>Thank you for booking with us!</p>
+        <p><strong>Check-in:</strong> ${checkinDate}</p>
+        <p><strong>Check-out:</strong> ${checkoutDate}</p>
+        <p><strong>Guests:</strong> ${guests}</p>
+        <p><strong>Room Type:</strong> ${roomType}</p>
+    `;
+
+    // Optionally, reset the form
+    document.getElementById("bookingForm").reset();
+};
+
+function showSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+}
+
+function showText(setId) {
+  // Hide all text sets
+  const allTextSets = document.querySelectorAll('.text-set');
+  allTextSets.forEach(set => set.classList.add('hidden'));
+
+  // Show the selected text set
+  const selectedSet = document.getElementById(setId);
+  selectedSet.classList.remove('hidden');
+}
+
+    </script>
+    
 </body>
 </html>
-
