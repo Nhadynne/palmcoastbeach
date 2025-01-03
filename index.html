@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
-    <link rel="icon" type="image/x-icon" href="images/fav.png">
+    <link rel="icon" type="image/x-icon" href="images/favicons.png">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,19 +18,18 @@
     <section id="header">
             <nav>
                 
-                <ul class="sidebar">
-                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a href="#header">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#gallery">GALLERY</a></li>
-                    <li><a href="#accommodation">ACCOMMODATIONS</a></li>
-                    <li><a href="#dining">DINING</a></li>
-                    <li><a href="#contact">CONTACT US</a></li>
-                    <li><a href="https://www.facebook.com/palmcoastbeachresort" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                    <li><a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                    
-                </ul>
-                <a href="#header"><div class="logo"><img src="images/logoo.png"></div></a>
+              <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#header" onclick="hideSidebar()">HOME</a></li>
+                <li><a href="#about" onclick="hideSidebar()">ABOUT</a></li>
+                <li><a href="#gallery" onclick="hideSidebar()">GALLERY</a></li>
+                <li><a href="#accommodation" onclick="hideSidebar()">ACCOMMODATIONS</a></li>
+                <li><a href="#dining" onclick="hideSidebar()">DINING</a></li>
+                <li><a href="#contact" onclick="hideSidebar()">CONTACT US</a></li>
+                <li><a href="https://www.facebook.com/palmcoastbeachresort" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+            </ul>
+                <a href="#header"><div class="logo"><img src="images/logo1.jpg" style="height: 55px; width:200px; margin-left: 30px;"></div></a>
                 <ul>
                     
                     <li class="hideOnMobile"><a href="#header">HOME</a></li>
@@ -41,10 +40,12 @@
                     <li class="hideOnMobile"><a href="#contact">CONTACT</a></li>
                     <li class="hideOnMobile"><a href="https://www.facebook.com/palmcoastbeachresort" target="_blank"><i class='bx bxl-facebook'></i></a></li>
                     <li class="hideOnMobile"><a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                    <a href="#" target="_blank"><button type="button">BOOK NOW</button></a>
+                    <a href="booking.html" target="_blank"><button type="button">BOOK NOW</button></a>
                     <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
+
+            
 </section>
 
     <!-- First Section with Background Image -->
@@ -54,29 +55,33 @@
         </div>
     </section>
 
-  
     <!----------------------------------ABOUT SECTION---------------------------------->
-    <section id="about">
-        <div class="container">
-            <img src="images/main (1).jpg" alt="Beach Scene" class="main-image">
-            <div class="short-description">
-                <h2>WHISPERING PALMS</h2>
-                <p>As a well-known local travel destination in Ivisan, Palm Coast Beach Resort offers various amenities such as daytime cottages, restaurant, coffee, and water sports activities such as kayaking and paddle boarding. As the very first accredited tourism enterprise to resume operations during pandemic, these new attractions helped us boost our popularity all over in Capiz and it's nearby provinces.</p>
-            </div>
-        </div>
-        <div class="bottom-images">
-            <img src="images/gallery15.jpg" alt="Tent Camping" class="bottom-image">
-            <img src="images/gallery16.jpg" alt="Sunset" class="bottom-image">
-            <img src="images/gallery17.jpg" alt="Cottages" class="bottom-image">
-        </div>
-    </section>
+<section id="about">
+  <div class="container">
+      <img src="images/main (1).jpg" alt="Beach Scene" class="main-image" onclick="openLightbox(this.src)">
+      <div class="short-description">
+          <h2>WHISPERING PALMS</h2>
+          <p>
+              As a well-known local travel destination in Ivisan, Palm Coast Beach Resort offers various amenities such as daytime cottages, a restaurant, coffee, and water sports activities such as kayaking and paddle boarding. 
+              As the very first accredited tourism enterprise to resume operations during the pandemic, these new attractions helped us boost our popularity all over Capiz and its nearby provinces.
+          </p>
+      </div>
+  </div>
+  <div class="bottom-images">
+      <img src="images/gallery15.jpg" alt="Tent Camping" class="bottom-image" onclick="openLightbox(this.src)">
+      <img src="images/gallery16.jpg" alt="Sunset" class="bottom-image" onclick="openLightbox(this.src)">
+      <img src="images/gallery17.jpg" alt="Cottages" class="bottom-image" onclick="openLightbox(this.src)">
+  </div>
+</section>
 
+<!-- Lightbox for Zooming Images -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightboxImage" class="lightbox-content">
+</div>
 
+<!-----------------------------------MISSION, VISION, ETC----------------------------------->
     <section class="adventure-section">
-     
-        
-      
-      
       <div class="adventure-text">
         <div class="adventure-header">
           <div class="subtitle" style="color: black; font-size: 30px;">GET TO KNOW MORE </div>
@@ -103,140 +108,163 @@
 
 
     <!---------------------------------GALLERY SECTION------------------------------ -->
-    <section id="gallery">
-      <div class="section-descriptionn">
-        <h2 >Captured Moments</h2>
-        <hr>
-        <p style="text-align: left; font-size: 20px;">
-        Experience the breathtaking beauty of Palm Coast Beach Resort through a collection of stunning photos.
-        From breathtaking sunsets to luxurious rooms and serene surroundings, our gallery captures the essence of relaxation and elegance. Discover the experiences that await you!
-        </p>
+<section id="gallery">
+  <div class="section-descriptionn">
+      <h2>Captured Moments</h2>
+      <hr>
+      <p style="text-align: left; font-size: 20px;">
+          Experience the breathtaking beauty of Palm Coast Beach Resort through a collection of stunning photos.
+          From breathtaking sunsets to luxurious rooms and serene surroundings, our gallery captures the essence of relaxation and elegance. Discover the experiences that await you!
+      </p>
+  </div>
+
+  <div class="gallery">
+      <div class="gallery-item large">
+          <img src="images/gallery18.jpg" alt="Image 1" onclick="openModal(this.src)">
       </div>
-    
-        <div class="gallery">
-          <div class="gallery-item large">
-            <img src="images/gallery1 (1).jpg" alt="Image 1">
-          </div>
-          <div class="gallery-item medium">
-            <img src="images/gallery2 (1).jpg" alt="Image 2">
-          </div>
-          <div class="gallery-item medium">
-            <img src="images/gallery3 (1).jpg" alt="Image 3">
-          </div>
-          <div class="gallery-item large">
-            <img src="images/gallery5 (1).jpg" alt="Image 4">
-          </div>
-          <div class="gallery-item large">
-            <img src="images/gallery6 (1).jpg" alt="Image 5">
-          </div>
-          <div class="gallery-item medium">
-            <img src="images/gallery7 (1).jpg" alt="Image 6">
-          </div>
-        </div>
+      <div class="gallery-item medium">
+          <img src="images/gallery2 (1).jpg" alt="Image 2" onclick="openModal(this.src)">
       </div>
-    </section>
+      <div class="gallery-item medium">
+          <img src="images/pic2 (1).jpg" alt="Image 3" onclick="openModal(this.src)">
+      </div>
+      <div class="gallery-item large">
+          <img src="images/gallery3 (1).jpg" alt="Image 4" onclick="openModal(this.src)">
+      </div>
+      <div class="gallery-item large">
+          <img src="images/gallery20.jpg" alt="Image 5" onclick="openModal(this.src)">
+      </div>
+      <div class="gallery-item medium">
+          <img src="images/gallery21.jpg" alt="Image 6" onclick="openModal(this.src)">
+      </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div id="caption"></div>
+  </div>
+</section>
     
    
 
-    <!--ACCOMMODATION SECTION-->
+    <!----------------------------ACCOMMODATION SECTION----------------------------------->
     <section id="accommodation">
       <div class="section-descriptionn">
           <h2>Experience Our Spaces</h2>
-        <hr> 
+          <hr> 
           <p style="text-align: left; font-size: 20px;">
-            Discover the perfect place to relax and unwind at Palm Coast Beach Resort.
+              Discover the perfect place to relax and unwind at Palm Coast Beach Resort.
           </p>
       </div>
-
+    
       <div class="accommodation-container">
-          <div class="accommodation-item">
-              <img src="images/room1 (1).jpg" alt="Standard Room">
+          <div class="accommodation-item" onclick="openAccommodationModal('images/ac2.jpg')">
+              <img src="images/ac2.jpg" alt="Standard Room">
               <div class="accommodation-details">
                   <h3>AC Room</h3>
-                  <p>Comfortable and cozy rooms equipped with all essential amenities.</p>
-                  <button class="primary-btn">Book Now</button>
-              </div>
+                  <p><hr><br><b>Inclusion: </b><br>Free Breakfast<br> Beach Access<br> Concierge Services<br>Prepaid WIFI<hr><br>₱2,499/night<br>Min. 2pax & Max. 4pax<br>Additional guest:<br>₱349/pax with Breakfast<hr style="margin-top: 25px;"></p>
+                  <a href="booking.html" target="_blank"><button class="primary-btn">Reserve Now</button></a>
+                </div>
           </div>
-          <div class="accommodation-item">
-              <img src="images/cottage2 (1).jpg" alt="Deluxe Room">
+          <div class="accommodation-item" onclick="openAccommodationModal('images/kuboa.jpg')">
+              <img src="images/kuboa.jpg" alt="Deluxe Room">
               <div class="accommodation-details">
                   <h3>Kubo A</h3>
-                  <p> Experience Palm Coast Beach Resort starting from 1,300 per night, affordable and relaxing stay.</p>
-                  <button class="primary-btn">Book Now</button>
+                  <p><hr><br><b>Inclusion: </b><br>Free Breakfast<br> Beach Access<br> Concierge Services<br>Prepaid WIFI<hr><br>₱1,300/night<br>Min. 2pax & Max. 4pax (Fan Room)<br>Additional guest:<br>₱250/pax with Breakfast<hr style="margin-top: 25px;"></p>
+                  <a href="booking.html" target="_blank"><button class="primary-btn">Reserve Now</button></a>
               </div>
           </div>
-          <div class="accommodation-item">
-              <img src="images/cottage1 (1).jpg" alt="Suite">
+          <div class="accommodation-item" onclick="openAccommodationModal('images/kubobb.jpg')">
+              <img src="images/kubobb.jpg" alt="Suite">
               <div class="accommodation-details">
                   <h3>Kubo B</h3>
-                  <p>Offering our new Kubo to cater your staycation needs! Whether you're couple of in a group, we got you.</p>
-                  <button class="primary-btn">Book Now</button>
+                  <p><hr><br><b>Inclusion:</b> <br>Free Breakfast<br> Beach Access<br> Concierge Services<br>Prepaid WIFI<hr><br>₱1,800/night<br>Min. 2pax & Max. 4pax (Fan Room)<br>Additional guest:<br> ₱250/pax with Breakfast<hr style="margin-top: 25px;"></p>
+                  <a href="booking.html" target="_blank"><button class="primary-btn">Reserve Now</button></a>
               </div>
           </div>
-          <div class="accommodation-item">
-              <img src="images/tent (1).jpg" alt="Suite">
+          <div class="accommodation-item" onclick="openAccommodationModal('images/tent2.png')">
+              <img src="images/tent2.png" alt="Suite">
               <div class="accommodation-details">
                   <h3>Tent</h3>
-                  <p>Nights are for beach bonfires and good vibes. Life is best when you're camping.</p>
-                  <button class="primary-btn">Book Now</button>
+                  <p><hr><br><b>Inclusion:</b><br> Free Breakfast <br>Beach Access<hr style="margin-top: 48px;"><br>₱500/night<br> Min. 2pax & Max. 4pax<br>Additional guest:<br> ₱250/pax with Breakfast<hr style="margin-top: 25px;"></p>
+                  <a href="booking.html" target="_blank"><button class="primary-btn">Reserve Now</button></a>
               </div>
           </div>
-         
+          <div class="accommodation-item" onclick="openAccommodationModal('images/function.png')">
+              <img src="images/function1.jpg" alt="Function Hall">
+              <div class="accommodation-details">
+                  <h3>Function Hall</h3>
+                  <p><hr><br>Enjoy our affordable beach front cottages now!<hr><br>₱2,000/day<br>30 pax<hr></p>
+                  <a href="booking.html" target="_blank"><button class="primary-btn">Reserve Now</button></a>
+              </div>
+          </div>
+          <div class="accommodation-item" onclick="openAccommodationModal('images/cabana.jpg')">
+              <img src="images/cabana.jpg" alt="Cabana">
+              <div class="accommodation-details">
+                  <h3>Cabana</h3>
+                  <p><hr><br>Enjoy our affordable beach front cottages now!<hr><br>₱1,000/day<br>15-20 pax<hr></p>
+                  <a href="booking.html" target="_blank"><button class="primary-btn">Reserve Now</button></a>
+              </div>
+          </div>
+          <div class="accommodation-item" onclick="openAccommodationModal('images/family1.jpg')">
+              <img src="images/family1.jpg" alt="Family Cottage">
+              <div class="accommodation-details">
+                  <h3>Family Cottage</h3>
+                  <p><hr><br>Enjoy our affordable beach front cottages now!<hr><br>₱700/day<br>10-15 pax<hr></p>
+                  <a href="booking.html" target="_blank"><button class="primary-btn">Reserve Now</button></a>
+              </div>
+          </div>
+          <div class="accommodation-item" onclick="openAccommodationModal('images/umbrella.png')">
+              <img src="images/umbrella.png" alt="Table with Umbrella">
+              <div class="accommodation-details">
+                  <h3>Table with Umbrella</h3>
+                  <p><hr><br>Enjoy our affordable beach front cottages now!<hr><br>₱400/day - 8pax<br>₱350/day - 4pax<hr></p>
+                  <a href="booking.html" target="_blank"><button class="primary-btn">Reserve Now</button></a>
+              </div>
+          </div>
       </div>
-  </section>
+    
+      <!-- Modal for Accommodation Images -->
+      <div id="accommodationModal" class="modal" onclick="closeAccommodationModal()">
+          <span class="close" onclick="closeAccommodationModal()">&times;</span>
+          <img class="modal-content" id="modalAccommodationImage">
+          <div id="caption"></div>
+      </div>
+    </section>
 
-
-  <!--DINING SECTION-->
-  <section id="dining">
-    <h2>Dining Options</h2>
-    <hr>
-    <div class="timeline">
-        <div class="timeline-description">
-            <h3>Restaurant</h3>
-            <p>We offer various food selections from seafoods to your favorite grilled dishes. Very affordable with set meals with drinks to a sharing dish good for 4 persons.</p>
-        </div>
-        <div class="timeline-item" style="margin-top: -3%;">
-                                    
-            
-            <div class="timeline-image">
-                <img src="images/barkada (1).jpg" alt="Fine Dining">
-            </div>  
-            <div class="timeline-image">
-                <img src="images/barkada1 (1).jpg" alt="Fine Dining">
-            </div>  
-            <div class="timeline-image">
-                <img src="images/seafood (1).jpg" alt="Fine Dining">
-            </div>   
-            <div class="timeline-image">
-                <img src="images/seafood1 (1).jpg" alt="Fine Dining">
-            </div>   
-        </div>
-        
-        </div>
-        <div class="timeline-description">
-            <h3>Palm Coast Coffee</h3>
-            <p>Is the flagship cafe of the resort known as the best coffee in town since it's opening last 2021. We offer coffee from Batangas and Sagada, which is very popular with coffee lovers here and abroad. Serving from black coffee to different drinks that will surely excite anyone who tries it.</p>
-        </div>
-        <div class="timeline-item">
-            
-            <div class="timeline-image">
-                <img src="images/mango (1).jpg" alt="Fine Dining">
-            </div>  
-            <div class="timeline-image">
-                <img src="images/matcha (1).jpg" alt="Fine Dining">
-            </div>   
-            <div class="timeline-image">
-                <img src="images/coffee (1).jpg" alt="Fine Dining">
-            </div>   
-            <div class="timeline-image">
-                <img src="images/soda (1).jpg" alt="Fine Dining">
-            </div>   
-        </div>
-        </div>
-    </div>
+    
+  <!---------------------------------------DINING SECTION--------------------------> 
+<section id="dining">
+  <h2>Dining Options</h2>
+  <hr>
+  <div class="timeline" style="margin-top: 50px;">
+    
+      <div class="timeline-item" style="margin-top: -3%;">
+          <div class="timeline-image">
+              <a href="pdfs/lunch.pdf" target="_blank">
+                  <img src="images/dining1.png" alt="Lunch Meal">
+              </a>
+          </div>
+          <div class="timeline-image">
+            <a href="pdfs/Bundle.pdf" target="_blank">
+                  <img src="images/dining2.png" alt="Bundle Meal">
+              </a>
+          </div>
+          <div class="timeline-image">
+            <a href="pdfs/Breakfast.pdf" target="_blank">
+                  <img src="images/dining3.png" alt="Seafood Menu">
+              </a>
+          </div>
+          <div class="timeline-image">
+            <a href="pdfs/Coffee.pdf" target="_blank">
+                  <img src="images/dining4.png" alt="Seafood Menu 2">
+              </a>
+          </div>
+      </div>
+  </div>
 </section>
-
-
 
    <!-------------------------------------------CONTACT US SECTION---------------------------------------------------->
     <section id="contact">
@@ -311,13 +339,16 @@
 
       <footer>
         <div class="containerr">
-          <div class="footer-content" style="margin-right: 20%;">
+          <div class="footer-content" style="margin-right: 10%;">
             <h3>Let's get in touch Us</h3>
-            <p>Better yet, see us in person! We love our customers, so feel free to visit during normal business hours.</p>
-            </div>          
+            <p>See us in person! We love our customers, so feel free to visit during normal business hours.</p>
+            <h3 style="margin-right: 135px;">Activities</h3>
+            <p>Paddle Boarding<br>Kayaking</p>
+          </div>  
+                    
 
-            <div class="footer-content" style="margin-right: 15%;">
-              <h3>Links</h3>
+            <div class="footer-content" style="margin-right: 2%;">
+              <h3>Quick Links</h3>
              <ul class="list">
               <li><a href="#header">HOME</li></a>
               <li><a href="#about">ABOUT</li></a>
@@ -329,105 +360,24 @@
             </div>
 
           
-         <div class="footer-content" style="margin-right: 10%;">
-          <h3>Contact Us</h3>
-          <p>Email: palmcoastbeachresort@gmail.com</p>
-          <p>Phone: 09959908318/09690341116</p>
-          <p>Address: Brgy. Basiao, Ivisan, Capiz, 5805</p>
+         <div class="footer-content" style="margin-left: 7%;">
+          <h3>Visit Us</h3>
+          <div class="information" style="color: white; margin-left: 40px;">
+            <i class='bx bxs-map' style="right: 30%;"></i>
+            <p style="margin-top: 5px; margin-left: 10px;">Brgy. Basiao, Ivisan, Capiz, 5805</p>
+            
+          </div>
+          <a href="#header"><img src="images/nobg.png" style="margin-top: 20px; width: 220px; margin-left: 20%;"></a>
         </div>
       </div>
         <div class="last-text">
           <p>
-            Website Designer & Developer<br> Palm Coast Beach Resort</p>
+            Website Designer & Developer<br> Nhadynne Grace G. Olisco & Glorida Marcelino</p>
         </div>
       </footer>
     
-    <script>
-      const panels = document.querySelectorAll(".panel");
-
-panels.forEach((panel) => {
-    panel.addEventListener("click", () => {
-        removeActiveClasses();
-        panel.classList.add("active");
-    });
-});
-
-function removeActiveClasses() {
-    panels.forEach((panel) => {
-        panel.classList.remove("active");
-    })
-}
-
-const inputs = document.querySelectorAll(".input");
-
-function focusFunc() {
-  let parent = this.parentNode;
-  parent.classList.add("focus");
-}
-
-function blurFunc() {
-  let parent = this.parentNode;
-  if (this.value == "") {
-    parent.classList.remove("focus");
-  }
-}
-
-inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunc);
-  input.addEventListener("blur", blurFunc);
-});
-
-
-function handleBooking(event) {
-    event.preventDefault(); // Prevent form from submitting the traditional way
-
-    // Get form values
-    const checkinDate = document.getElementById("checkin").value;
-    const checkoutDate = document.getElementById("checkout").value;
-    const guests = document.getElementById("guests").value;
-    const roomType = document.getElementById("roomType").value;
-
-    // Simple validation
-    if (new Date(checkinDate) >= new Date(checkoutDate)) {
-        alert("Check-out date must be after the check-in date.");
-        return;
-    }
-
-    // Display confirmation message
-    const confirmationMessage = document.getElementById("confirmationMessage");
-    confirmationMessage.innerHTML = `
-        <h3>Booking Confirmation</h3>
-        <p>Thank you for booking with us!</p>
-        <p><strong>Check-in:</strong> ${checkinDate}</p>
-        <p><strong>Check-out:</strong> ${checkoutDate}</p>
-        <p><strong>Guests:</strong> ${guests}</p>
-        <p><strong>Room Type:</strong> ${roomType}</p>
-    `;
-
-    // Optionally, reset the form
-    document.getElementById("bookingForm").reset();
-};
-
-function showSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'flex'
-}
-function hideSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'none'
-}
-
-function showText(setId) {
-  // Hide all text sets
-  const allTextSets = document.querySelectorAll('.text-set');
-  allTextSets.forEach(set => set.classList.add('hidden'));
-
-  // Show the selected text set
-  const selectedSet = document.getElementById(setId);
-  selectedSet.classList.remove('hidden');
-}
-
-    </script>
+<!----custom js link---->
+<script src="script.js"></script>
     
 </body>
 </html>
